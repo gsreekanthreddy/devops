@@ -5,26 +5,9 @@
 {
   $user = $_POST['text'];
     
-  include"conn.php";
-  $sql = "SELECT * FROM emp WHERE user='$user'";
-  $data = mysqli_query($con,$sql)or die(mysqli_error());
-  $num = mysqli_num_rows($data);
-  if($num <1)
-  {
-    echo"wel come";
-    $que  = "insert into emp values('$user')";
-     if($data=mysqli_query($con,$que)or die(mysqli_error($con)))
-     {
-   echo "data inserted";
-      }
-   else
-       {
+  
  echo "<div style='position:absolute;top:650;left:400;color:red'><h2><b>data is not iserted</b></h2></div>";
-       }
- }
- else{
-    echo "name already exist";
- }
+  
 }
 
 ?>
@@ -42,11 +25,6 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
-    <style type="text/css">
-        .bg{
-           background-image: url("image/grayBack.jpg");
-        }
-    </style>
 </head>
 <body>
 
