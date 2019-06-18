@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="signup-content">
                     <form method="POST" action="" id="signup-form" class="signup-form">
-                        <h2 class="form-title">Ente some name</h2>
+                        <h2 class="form-title">Enter some name</h2>
                         <div class="form-group">
                             <input type="text" class="form-input" name="text" id="text" placeholder="Your Name" required />
                         </div>
